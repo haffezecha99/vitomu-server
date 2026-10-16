@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 5005;
+const PORT = process.env.PORT || 7860;
 
 // Percaya reverse proxy (Cloudflare tunnel / Nginx) agar IP asli client terdeteksi
 app.set('trust proxy', 1);

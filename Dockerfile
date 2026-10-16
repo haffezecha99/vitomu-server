@@ -25,10 +25,10 @@ COPY . .
 # Buat folder sementara untuk proses konversi
 RUN mkdir -p temp/uploads temp/outputs
 
-# Konfigurasi Port Render (default 5005 atau diberikan Render otomatis via env $PORT)
-ENV PORT=5005
+# Konfigurasi Port (default 7860 untuk Hugging Face / Cloud Docker, atau sesuai $PORT)
+ENV PORT=7860
 ENV NODE_ENV=production
 
-EXPOSE 5005
+EXPOSE 7860
 
 CMD ["node", "index.js"]
