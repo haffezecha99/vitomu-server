@@ -1,0 +1,29 @@
+{
+  "name": "video-to-audio-server",
+  "version": "1.0.0",
+  "description": "Backend API for Video to Audio Converter using Express & FFmpeg",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12",
+    "archiver": "^7.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "ffmpeg-static": "^5.2.0",
+    "ffprobe-static": "^3.1.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "node-id3": "^0.2.9",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}

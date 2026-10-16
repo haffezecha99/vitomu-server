@@ -1,0 +1,6 @@
+node_modules
+temp/uploads/*
+temp/outputs/*
+.git
+.active_tunnel
+.DS_Store
